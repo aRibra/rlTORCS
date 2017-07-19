@@ -5,7 +5,7 @@ cd `dirname -- "$0"`
 
 if [[ "$1" == '-port' ]]; then
 	shift
-	export DISPLAY="$1:"
+	export DISPLAY=":$1"
 	echo "change to display channel $DISPLAY"
 	shift
 fi
